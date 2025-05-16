@@ -1,20 +1,21 @@
-
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 export const ShowPhone = () => {
-    const telefono = 2132167885;
-    const [showPhone, setShowPhone] = useState(false)
-    return (
+  const telefono = 2132167885;
+  const [showPhone, setShowPhone] = useState(false);
+  const email = "cualquiera@gmail.com";
+  return (
+    <div>
+      {showPhone && (
         <div>
-
-            {
-                showPhone && <h1>Telefono: {telefono}</h1>
-            }
-
-            <button onClick={() => setShowPhone(!showPhone)} >
-                Mostrar / Ocultar
-            </button>
-
+          <h1>Telefono: {telefono}</h1>
+          <h1>email: {email}</h1>
         </div>
-    )
-}
+      )}
+
+      <button onClick={() => setShowPhone(!showPhone)}>
+        Mostrar / Ocultar
+      </button>
+    </div>
+  );
+};
