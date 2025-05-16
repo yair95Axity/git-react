@@ -2,8 +2,9 @@ import React from 'react'
  
 export const Text2 = () => {
     const nombre = "Irving";
+    const apellido = "Bautista";
   return (
-    <div>Mi nombre es: {nombre} </div>
+    <div>El nombre del usuario es: {nombre} {apellido}</div>
   )
 }
  
